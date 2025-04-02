@@ -107,7 +107,7 @@ const animationTimeline = () => {
     "+=4")
     .to(
         ".four",
-        0.5, {
+        0.3, {
             scale: 0.2,
             opacity: 0,
             y: -150
@@ -189,38 +189,38 @@ const animationTimeline = () => {
     )
     .from(
         ".profile-picture",
-        0.5, {
-            scale: 3.5,
+        0.3, {
+            scale: 3.0,
             opacity: 0,
-            x: 25,
-            y: -25,
-            rotationZ: -45,
+            x: 15,
+            y: -15,
+            rotationZ: -30,
         },
         "-=2"
     )
-    .from(".hat", 0.5, {
+    .from(".hat", 0.4, {
         x: -100,
-        y: 350,
+        y: 250,
         rotation: -180,
         opacity: 0,
     })
     .staggerFrom(
         ".wish-hbd span",
-        0.7, {
+        0.6, {
             opacity: 0,
-            y: -50,
+            y: -40,
             // scale: 0.3,
-            rotation: 150,
-            skewX: "30deg",
+            rotation: 130,
+            skewX: "20deg",
             ease: Elastic.easeOut.config(1, 0.5),
         },
         0.1
     )
     .staggerFromTo(
         ".wish-hbd span",
-        0.7, {
+        0.6, {
             scale: 1.4,
-            rotationY: 150,
+            rotationY: 130,
         }, {
             scale: 1,
             rotationY: 0,
@@ -232,7 +232,7 @@ const animationTimeline = () => {
     )
     .from(
         ".wish h5",
-        0.5, {
+        0.4, {
             opacity: 0,
             y: 10,
             skewX: "-15deg",
